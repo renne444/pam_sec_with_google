@@ -1,0 +1,2 @@
+FROM ubuntu
+RUN sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list && apt-get update && apt-get install -y bind9 cron iproute2 curl vim net-tools nginx tree jq dnsutils inetutils-ping wget make gcc libpam0g-dev unzip git dh-autoreconf htop openssh-server libqrencode-dev
